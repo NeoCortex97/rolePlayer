@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++14 -Wall -pedantic -Wextra  -shared -Wl,-soname,libAdvLexer.so -o ../bin/libs/libAdvLexer.so CMakeFiles/AdvLexer.dir/AdvLexer.cpp.o 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libTextUtils.so -o libTextUtils.so CMakeFiles/TextUtils.dir/__/src/TextUtils.cpp.o 

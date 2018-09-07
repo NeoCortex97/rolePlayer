@@ -1,0 +1,36 @@
+!FORMAT ADV_TEXT
+!ENTRYPOINT INTRO
+
+# NAME ersetzen durch den namen deiner Geschichte
+[NAME]
+  # Dieser Tag muss nicht INTRO heißen, aber wenn du seinen namen änderst musst
+  # du ihn auch in zeile 2 bei !ENTRYPOINT ändern!
+  # In INTRO kannst du sofort mit der geschichte anfangen.
+  [INTRO]
+    [text]
+    [/text]
+    [options]
+      # Die anzahl von entry tags kann beliebig groß sein
+      [entry]
+        [description]
+        [/description]
+        [dest]
+        [/dest]
+        [key]
+        [/key]
+      [/entry]
+    [/options]
+  [/INTRO]
+  [0]
+    [text]
+    [/text]
+    [options]
+      [entry]
+        [description]
+        [/description]
+        [dest]
+        [/dest]
+      [/entry]
+    [/options]
+  [/0]
+[/NAME]

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++14 -Wall -pedantic -Wextra  -shared -Wl,-soname,libTestFunctions.so -o ../bin/libs/libTestFunctions.so CMakeFiles/TestFunctions.dir/TestFunctions.cpp.o -Wl,-rpath,/home/stefan/Dokumente/roleplays/bin/libs ../bin/libs/libFileUtils.so ../bin/libs/libTextUtils.so 

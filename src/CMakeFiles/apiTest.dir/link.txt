@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14 -Wall -pedantic -Wextra  -rdynamic CMakeFiles/apiTest.dir/Testing.cpp.o  -o ../bin/apiTest -Wl,-rpath,/home/stefan/Dokumente/roleplays/bin/libs ../bin/libs/libTestFunctions.so ../bin/libs/libFileUtils.so ../bin/libs/libTextUtils.so 

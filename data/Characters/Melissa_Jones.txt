@@ -1,0 +1,40 @@
+Personendaten:
+  Vorname:       Melissa
+  Nachname:      Jones
+  Spitzname:     Lissy
+  Alter:         18
+  Herkunft:      Stadrand von Phoenix(Arizona)
+
+Stil:
+  Oberteile:     Bandshirts
+  Hosen:         boyfriend
+  Accessiors:    Bandana
+                 Sonnenbrille
+                 Armband
+Körper:
+  Körperschmuck: Bauchnabel Piercing (Glitzerstein pink)
+                 Industrial (rechts x 2)
+                 Drache (schulter rechts)
+  Haar:
+    Farbe:       grau
+    länge:       brust
+    frisur:      leicht lockig
+  Augenrfarbe:   Blau
+  Statur:        Schlank, sportlich
+  Körbchengröße: 80 D
+  Gewicht:       60 kg
+  Größe:         174 cm
+  Schuhgröße:    41
+  Hautfarbe:     weiß
+
+Beschreibung:
+  Lissy ist eine ganz normale 17-Jährige aus Arizona. 
+  Sie ist mal von ihrer Begeistrung für die Formal-1 abgesehen ein ganz normales Mädchen.
+  Eigentlich Trägt sie immer irgendwelche zerrissene Hosen und irgendwelche Shirts von bands, die ihre Mutter schrecklich findet.
+  Meistens hat sie ein Bandana Mit einem Weißen Totenkopf auf schwarzem Grund um den Hals und trägt gerne Armbänder am linken handgelenk.
+  Wenn wie gerade die großen Ferien sind, hat sie eigentlich auch immer eine Sonnenbrille dabei.
+  Im rechten Ohr hat sie gleich zwei industrial piercings mit totenköpfen in Neonfarben.
+  Ihren Baunabel ziert ein pinker Glitzerstein und auf ihrer schulter hat sie einen Feuerspeienden Drachen, der sie ähnlich einer
+  hescolab-Schlange um ein schwert windet.
+  Ihr Haar geht ihr ungefähr bis zur brust, ist von natur aus grau und ab und zu mit knallig bunten stränen verschönert.
+  
