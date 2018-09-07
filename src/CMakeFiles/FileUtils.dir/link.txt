@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++14 -Wall -pedantic -Wextra  -shared -Wl,-soname,libFileUtils.so -o ../bin/libs/libFileUtils.so CMakeFiles/FileUtils.dir/FileUtils.cpp.o -Wl,-rpath,/home/stefan/Dokumente/roleplays/bin/libs ../bin/libs/libTextUtils.so 

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stefan/Dokumente/roleplays/src/TermUtils.cpp
+iostream
+-
+iomanip
+-
+sys/ioctl.h
+-
+unistd.h
+-
+vector
+-
+TermUtils.h
+/home/stefan/Dokumente/roleplays/src/TermUtils.h
+
+include/TermUtils.h
+unistd.h
+-
+sys/ioctl.h
+-
+iostream
+-
+iomanip
+-
+

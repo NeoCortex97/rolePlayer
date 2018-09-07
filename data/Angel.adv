@@ -1,0 +1,109 @@
+!FROMAT ADV_TEXT
+!ENTRYPOINT INTRO
+[Angel]
+  [INTRO]
+    [text]
+      Erzähler: Möchtest du mir etwas über deinen Engel erzählen?
+    [/text]
+    [options]
+      [entry]
+        [description]
+          Ja, ich möchte mehr über meinen Engel erzählen!
+        [/description]
+        [key]ja[/key]
+        [dest] 0 [/dest]
+      [/entry]
+      [entry]
+        [description]
+          Nein, lass mich bloß in Ruhe!
+        [/description]
+        [key]nein[/key]
+        [dest] MISSING [/dest]
+      [/entry]
+    [/options]
+  [/ITRO]
+  [0]
+    [value]
+      $AngelSex = text
+      $AngelSex = "weiblich"
+
+      $AngelAge = zahl
+      $AngelAge = 16
+
+      $PlayerSex = text
+      $PlayerSex = "männlich"
+    [/value]
+    [text]
+      Erzähler: Dann verrate mir bitte ob dein Engel Männlich oder weiblich ist.
+      \nDu: Mein Engel ist....
+    [/text]
+    [options]
+      [entry]
+        [description]
+          ... eine hübsche, junge Frau.
+        [/description]
+        [key]mädchen[/key]
+        [dest] w1 [/dest]
+      [/entry]
+      [entry]
+        [description]
+          ... ein heißer, junger Mann.
+        [/description]
+        [key] junge [/key]
+        [dest] m1 [/dest]
+      [/entry]
+    [/options]
+  [/0]
+  [w1]
+    [text]
+      Erzähler: Sooo und wie alt soll sie sein?\n
+      Du: Sie ist ... Jahre alt.
+    [/text]
+    [input] $AngelAge [/input]
+    [dest] 2 [/dest]
+  [/w1]
+  [m1]
+    [text]
+      Erzähler: Sooo und wie alt soll er sein?\n
+      Du: Er ist ... Jahre alt.
+    [/text]
+    [input] $AngelAge [/input]
+    [dest] 2 [/dest]
+  [/m1]
+  [2]
+    [text]
+      Erzähler: Dann können wir ja anfangen... Aber halt, ich weiß ja nichts über
+      dich.\n
+      Wie ist dein Name?\n
+      Du: Mein Name ist ...
+    [/text]
+    [input] $PlayerName = text [/input]
+    [dest] 3 [/dest]
+  [/2]
+  [3]
+    [text]
+      Erzähler: Ja und wie alt bist du?\n
+      Du: Ich bin ... Jahre alt.
+    [/text]
+    [input] $PlayerSex [/input]
+    [dest] 4 [/dest]
+  [/3]
+  [4]
+    [text]
+      Erzähler: Und du bist?\n
+      Du: Ich bin...
+    [/text]
+    [options]
+      [entry]
+        [description]... ein Männchen.[/description]
+        [key] junge [/key]
+        [dest]introM[/dest]
+      [/entry]
+      [entry]
+        [description]... ein Weibchen.[/description]
+        [key]mädchen[/key]
+        [dest]introW[/dest]
+      [/entry]
+    [/options]
+  [/4]
+[/Angel]

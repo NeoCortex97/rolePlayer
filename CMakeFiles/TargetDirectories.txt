@@ -1,0 +1,13 @@
+/home/stefan/Dokumente/roleplays/CMakeFiles/rebuild_cache.dir
+/home/stefan/Dokumente/roleplays/CMakeFiles/edit_cache.dir
+/home/stefan/Dokumente/roleplays/src/CMakeFiles/rebuild_cache.dir
+/home/stefan/Dokumente/roleplays/src/CMakeFiles/TestFunctions.dir
+/home/stefan/Dokumente/roleplays/src/CMakeFiles/TermUtils.dir
+/home/stefan/Dokumente/roleplays/src/CMakeFiles/TextUtils.dir
+/home/stefan/Dokumente/roleplays/src/CMakeFiles/AdvLexer.dir
+/home/stefan/Dokumente/roleplays/src/CMakeFiles/edit_cache.dir
+/home/stefan/Dokumente/roleplays/src/CMakeFiles/FileUtils.dir
+/home/stefan/Dokumente/roleplays/src/CMakeFiles/apiTest.dir
+/home/stefan/Dokumente/roleplays/src/CMakeFiles/rolePlayer.dir
+/home/stefan/Dokumente/roleplays/include/CMakeFiles/rebuild_cache.dir
+/home/stefan/Dokumente/roleplays/include/CMakeFiles/edit_cache.dir

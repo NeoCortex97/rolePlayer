@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stefan/Dokumente/roleplays/src/rolePlayer.cpp
+iostream
+-
+string
+-
+

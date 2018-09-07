@@ -1,0 +1,164 @@
+# Das ist ein Test um die funktionen für meine
+# Rollenspiel engine zu testen!
+# Diese befindet sich noch in der entwicklung und das TestAdventrue enthält
+# deshalb keinen richtigen inhalt!
+
+# Zeilen, die mit einem Hash(#) beginnen sind kommentare und werden einfach ignoriert.
+
+# Am besten liest du den Code für abbenteuer immer mit dem Atom Text-editor.
+# Atom ist sehr flexibel an deine Auffgaben anpassbar und ich werde ein syntax
+# Paket entwickeln, damit tags, variablen und formatierungszeichen bunt
+# hervorgehoben werden.
+# Außerdem kann Atom beim kopieren und einfügen die formatierung automatisch in
+# Ordnung bringen und man kann plugins benutzen um automatisch ein schönes
+# Format herzustellen.
+# Außerdem werde ich ein Plugin entwickeln, das autocomplete für die Tags kann und
+# werde muster ür strukturen von tags hinterlegen, mit denen ein kompletter
+# Knoten einfach ein Formular mit schreiben und TAB drücken ausgefüllt werden kann.
+# Wenn es einmal einen Editor geben wird, dann wird wahrscheinlich ein Plugin für
+# Atom die Texte erstellen.
+
+!FORMAT ADV_TEXT
+# Diese Meta Zeile gibt das Format an, in welchem das Spiel geschrieben ist.
+# Diese information ist wichtig, alss die Engine irgendwann auch andere Formate unterstützen soll.
+
+!ENTRYPOINT INTRO
+# Diese Meta Zeile gibt den Einstiegspunkt für das Spiel an.
+# Der Einstiegspunkt wird von der Engine automatisch ausgegeben.
+
+[TEST]
+  # Test ist der Name des Spiels, zu dem der inhalt gehört.
+  [INTRO]
+    # Der Einstiegspunkt für das Spiel. Er wird vom Programm automatisch augegeben.
+    # Im "text"-Tag wird der Text geschrieben, der in diesem Zustand angezeigt werden soll.
+    [text]
+      Hallo welt, das ist mein erstes test adventure, das ich zum entwickeln der
+      engine benutze. Hier sind beispiele für alle funktionen, die die engine haben soll!
+    [/text]
+    # Im "options"-Tag werden alle auswahlmöglichkeiten dargestellt.
+    [options]
+      # Um eine neue Option zu erstellen musst du nur einen neuen "entry"-Tag
+      # benutzen. Ein entry muss immer einen "description"-Tag und einen "dest"-Tag
+      # enthalten. Description bedeutet Beschreibung und ist der text, der im
+      # Menü angezeigt wird.
+      [entry]
+        # Die Beschreibung, die im Menü angezeigt wird steht in description.
+        [description]
+          # Alle Leerzeichen am anfang eines Tags verschwinden. Deswegen kann die
+          # Beschreibung über mehrere zeilen verteilt werden und beliebig formairt werden.
+          # Die Formatierung ist noch nicht geplant und die wird zum jetzigen Zeitpunkt
+          # noch festgelegt. Komplett leere Zeilen und Zeilen, die nur leerzeichen enthalten
+          # Werden schon beim lesen der Datei ignoriert!
+
+
+          Neue Runde
+        [/description]
+        # Dest steht für destinatiion und das heißt so viel wie ziel....
+        # Hier muss der Name stehen, von dem Knoten zu dem bei auswahl der Option
+        # als nächstes gesprungen wird.
+        [dest]
+          0
+        [/dest]
+        # Ein Key Tag gibt an welche eingabe diese Option ausgewählt wird.
+        # Dieser Tag ist zwar praktisch, aber nicht zwingend notwendig!
+        # Wenn dieser Tag nicht vorhanden ist, kann die optioin über ihre position errreicht werden.
+        # Also würde man diesen Eintrag über "1" erreichen.
+        # Die Position ist relativ zum Knoten!!!!
+          # Also die position, die zuerst im options Tag steht ist immer unter "1"
+          # erreichbar.
+        [key]
+          new
+        [/key]
+      [/entry]
+      # Im nächsten Eintrag wird gezeigt, dass die formatierung eines eintrags komplett frei ist.
+      # Die einzige Bedingung, die bei der Formatierung zwingend ist:
+        # Jeder Tag muss geschlossen werden!
+        # Man schließt einen Tag in dem man einen slash (/) vor seinem namen schreibt.
+      [entry]
+        # Ein Tag muss nicht auf drei Zeilen verteilt sein, sondern er kann auch
+        # In eine Zeile geschrieben werden und muss keine Leerzeichen zur trennung
+        # von tags und inhalt enthalten.
+        [description]Runde laden[/description]
+        [dest]-1[/dest]
+
+        # Du kannst beliebig viele Leerzeilen in deine Abenteuer einbauen und zwischen
+        # drei-Zeilen und ein-Zeilen Tags wechseln!
+
+        # Zu empfehlen ist es: tags, die viel inhalt haben werden auf mehrere zeiolen
+        # aufgeteilt und man schreibt keine zu langen zeilen, weil man dann ohne
+        # scrollen zur seite alles lesen kann.
+        [key]
+          load
+        [/key]
+      [/entry]
+    [/options]
+  [/INTRO]
+
+
+  # Hier ist ein leerer Tag als muster zum kopieren, bis es eine Möglichkeit gibt
+  # um knoten automatisch erstellen zu lassen.
+
+  [0]
+    [text]
+    [/text]
+    [options]
+      [entry]
+        [description]
+        [/description]
+        [dest]
+        [/dest]
+      [/entry]
+    [/options]
+  [/0]
+
+
+  # Hier sollen die einfachen variablen funktionen gezeigt werden:
+  [-1]
+    [text]
+      Wie ist dein Name? \n # Man kann auch am ende einer Zeile einen Kommentar einfügen
+      # \n ist das Symbol für eine neue Zeile.
+      Name:
+    [/text]
+    # Ein input Tag kann eine eingabe vom nutzer lesen.
+    # Das Wort nach dem Dollarzeichen ($) ist der name unter dem die eingabe erreichbar ist.
+    # Das = legt fest, dass es sich be dem inhalt um Text handelt.
+    # Variablen können folgende Typen haben:
+      # = text      für zeichenketten
+
+      # = zahl      für ganze zahlen. Komma zahlen werden im Moment noch nicht
+      #             benötigt, da zwischen diesen unterscheiden werden müsste.
+
+      # = pfad      für dateinamen, da für diese andere regeln gelten als für
+      #             normale zeichenketten.
+
+    # Die Zuordnung für den Datentyp muss nur beim ersten verwenden des namens
+    # erfolgen. Man kann eine neue Variable nur in "value"-Tags und "input"-Tags
+    # erstellen.
+
+    [input] $playerName = text [/input]
+
+    # In einem value tag können neue Variablen zugewiesen werden und hier kann mit
+    # Variablen gerechnet werden.
+    [value]
+      # Die folgende Zeile erstellt eine Neue Variable mit dem Namen playerAge.
+      $playerAge = zahl
+
+      # In der folgenden Zeile wird playerAge der Wert 18 zugewiesen.
+      $playerAge = 18
+    [/value]
+    [text]
+      Damit deutlich wird, dass ein Knoten auch mehrere Text tags haben kann
+      steht hier noch irgend ein Text, in dem ich $playerName direkt anspreche...
+    [/text]
+    # leere Tags werden einfach bei der Analyse des Knotens entfernt, also ist es
+    # nicht schlimm, wenn du dir ein festes Muster suchst und am ende nicht alle Tags benutzt.
+    [options]
+      [entry]
+        [description]
+        [/description]
+        [dest]
+        [/dest]
+      [/entry]
+    [/options]
+  [/-1]
+[/TEST]

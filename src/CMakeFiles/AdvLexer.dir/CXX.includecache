@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stefan/Dokumente/roleplays/src/AdvLexer.cpp
+AdvLexer.h
+/home/stefan/Dokumente/roleplays/src/AdvLexer.h
+FileUtils.h
+/home/stefan/Dokumente/roleplays/src/FileUtils.h
+vector
+-
+iostream
+-
+fstream
+-
+
+include/AdvLexer.h
+TextUtils.h
+include/TextUtils.h
+FileUtils.h
+include/FileUtils.h
+vector
+-
+string
+-
+
+include/FileUtils.h
+string
+-
+vector
+-
+
+include/TextUtils.h
+string
+-
+vector
+-
+

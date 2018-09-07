@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14 -Wall -pedantic -Wextra  -rdynamic CMakeFiles/rolePlayer.dir/rolePlayer.cpp.o  -o ../bin/rolePlayer -Wl,-rpath,/home/stefan/Dokumente/roleplays/bin/libs ../bin/libs/libTermUtils.so ../bin/libs/libAdvLexer.so ../bin/libs/libTestFunctions.so ../bin/libs/libFileUtils.so ../bin/libs/libTextUtils.so 

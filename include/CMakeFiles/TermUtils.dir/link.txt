@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libTermUtils.so -o libTermUtils.so CMakeFiles/TermUtils.dir/__/src/TermUtils.cpp.o 

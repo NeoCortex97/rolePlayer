@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++14 -Wall -pedantic -Wextra  -shared -Wl,-soname,libTextUtils.so -o ../bin/libs/libTextUtils.so CMakeFiles/TextUtils.dir/TextUtils.cpp.o 

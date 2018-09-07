@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stefan/Dokumente/roleplays/src/Testing.cpp
+TestFunctions.h
+/home/stefan/Dokumente/roleplays/src/TestFunctions.h
+vector
+-
+iostream
+-
+
+include/TestFunctions.h
+string
+-
+vector
+-
+
